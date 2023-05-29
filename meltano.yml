@@ -1,0 +1,18 @@
+version: 1
+send_anonymous_usage_stats: true
+project_id: "target-webp"
+default_environment: test
+environments:
+- name: test
+plugins:
+  extractors: []
+  loaders:
+  - name: "target-webp"
+    namespace: "target_webp"
+    pip_url: -e .
+    capabilities:
+    - about
+    - stream-maps
+    - record-flattening
+    # TODO: Output dir
+    # TODO: Timestamps
