@@ -36,4 +36,4 @@ class WebpSink(RecordSink):
 
         image_path.write_bytes(image_data)
 
-        self.logger.info("Created WEBP image", image_path)
+        self.logger.info("Created WEBP image at %s", image_path)
